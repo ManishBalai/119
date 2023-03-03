@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 23 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body style="text-align: center;"> 
+    <h1 style="color: green">
+        TASK - 23 :- Remove a specific value from an array using jQuery.
+    </h1>
+    <p id="UP"></p>
+
+    <button onclick="gfg_Run()">
+        Click Here
+    </button>
+
+    <p id="DOWN" style="color:green;"></p>
+
+    <script>
+        var el_up = document.getElementById("UP");
+        var el_down = document.getElementById("DOWN");
+        var arr = ["GFG", "GeeksForGeeks", "Geek", "Geeks"];
+        var remEl = "Geek";
+        el_up.innerHTML = "Click on the button to perform "
+                + "the operation.<br>Array - [" + arr + "]";
+                  
+        function gfg_Run() {
+            var arr2 = $(arr).not([remEl]).get();
+            el_down.innerHTML = "[" + arr2 + "]";
+        } 
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_24.html" target="_blank"> task_24</a></button>
+    </center>
+</body>
+</html>

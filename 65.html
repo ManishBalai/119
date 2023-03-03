@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 65 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #para {
+            font-size: 25px;
+        }
+        button {
+            border-radius: 40px;
+            border: none;
+            color: white;
+            background-color: maroon;
+            font-size: 15px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TASK - 65 :- Method chaining in jQuery
+    </h1>
+    <p id="para"> It's such a beautiful day. </p>
+    <button> click me</button>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                  
+                 //assigning the color blue
+                $("#para").css("color", "darkblue")
+                //using slide up method
+                    .slideUp(2000)  
+                 //using slide down method
+                    .slideDown(2000).
+                slideUp(2000).
+                slideDown(4000);
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"><a href="/66.html" target="_blank"> TASK_66 </a></button>
+    </center>
+</body>
+</html>

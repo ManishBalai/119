@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 61 </title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    <style>
+        button{
+            background-color: rgb(31, 156, 0);
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TASK - 61 :- Animate multiple CSS properties in jQuery </h1>
+    <div class="button">
+        <button id="bt1">Hey Buddy</button>
+    </div>
+  
+    <script type="text/javascript">
+        $(document).ready( ()=>{
+  
+            // Event listener to recognise click
+            // Animations will occur sequentially
+            // and will be added to queue
+            $('#bt1').on('click', () => {
+                $('#bt1').animate({fontSize : '40px'}, {duration : 1000})
+                .animate({width : '300px'}, {duration : 1000})
+                .animate({height : '300px' }, {duration : 1000});
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"><a href="/62.html" target="_blank"> TASK_62 </a></button>
+    </center>
+</body>
+</html>

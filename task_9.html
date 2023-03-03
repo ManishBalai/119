@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 9 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+    <style>
+        .btn1 {
+            width: 70px;
+            height: 30px;
+            font-size: 15px;
+            margin: 5px;
+            padding: 0px;
+            border-color: #ad41df;
+        }
+          
+        #addList {
+            width: 250px;
+            height: 24px;
+            font-size: 15px;
+            border-color: rgb(243, 127, 73);
+        }
+    </style>
+      
+    <script>
+        $(document).ready(function() {
+            $('.btn1').click(function() {
+                var content = $('#addList').val();
+                var fixingContent = 
+                    '<li>' + content + '</li>';
+                      
+                $('.List').append(fixingContent);
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 9 :- Add a list elements within an unordered list element.
+    </h1>
+    <h3 class="head"> Type List to Add</h3>
+    <input type="text" id="addList">
+    <input type="button" name="add" 
+        class="btn1" value="Add">
+    </button>
+  
+    <div class="addTask">
+        <ul class="List">
+  
+        </ul>
+    </div>
+    <center>
+        <button class="btn"> <a href="task_10.html" target="_blank"> task_10</a></button>
+    </center>
+</body>
+</html>

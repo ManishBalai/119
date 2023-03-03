@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 28 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 28 :- Disable a link using jQuery
+    </h1>
+    <a href="https://www.wikipedia.org/"> wikipedia</a>
+    <p></p>
+     <input id="button1" type="button" value="Click to remove the link!" />
+    <script>
+        $(document).ready(function(){ 
+  $('#button1').click(function(){ 
+  $("a").removeAttr('href');    
+   });
+});
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_29.html" target="_blank"> task_29</a></button>
+    </center>
+</body>
+</html>

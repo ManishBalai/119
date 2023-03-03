@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 119 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .highlight{
+            background: rgb(255, 145, 0);
+        }        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("h2").nextUntil("ul").addClass("highlight");
+    });
+    </script>
+</head>
+<body>
+    <h1>TASK - 119 :- jQuery select all the preceding sibling elements between two elements </h1>
+    <div class="container">
+        <h2>Hello World</h2>
+        <p>Emma is <em> writing a letter.</em>.</p>
+        <p>We wake up early in the morning..</p>
+        <ul>
+            <li>My brother speaks loudly.</li>
+            <li>I have driven a car.</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+

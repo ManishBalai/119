@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 24 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #Geeks {
+            padding: 15px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(112, 162, 255);
+            background: rgb(245, 82, 115);
+            border-radius: 40px;
+        }
+    </style>
+    <script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+</head>
+<body style="text-align: center;">
+    <h1 style="color: green">
+        TASK - 24 :- Change button text using jQuery
+    </h1>
+    <input type="button" id="Geeks" value="Click"><br><br>
+    <script>
+        $(document).ready(function() {
+            $("input").click(function() {
+                // Change text of input button
+                $("#Geeks").prop("value", "Click Here");
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_25.html" target="_blank"> task_25</a></button>
+    </center>
+</body>
+</html>

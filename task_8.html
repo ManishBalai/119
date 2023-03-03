@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 8 </title>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 8 :- Move one DIV element inside another using jQuery. 
+    </h1>
+    <div id="nonSelected">
+    <button id="btnDefault" onclick="moveButton(this)" type="button">Button - 1</button>
+    <button id="btnPrimary" onclick="moveButton(this)" type="button" >Button - 2</button>
+	
+	  <button id="btnDanger" onclick="moveButton(this)" type="button">Button - 3</button>
+	  
+	  </div>
+	  <div id="selected">
+	  </div>
+      <br>
+    <script>
+        function moveButton(elem){
+    if( $(elem).parent().attr("id") == "nonSelected" ){
+        $(elem).detach().appendTo('#selected');
+    }
+    else{
+        $(elem).detach().appendTo('#nonSelected'); 
+    }
+}
+    </script>
+    <center>
+        <button class="btn"> <a href="task_9.html" target="_blank"> TASK_9</a></button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 88 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <h1>TASK - 88 :- jQuery remove the parent element of an HTML element from the page
+    </h1>
+    <div id = "parent" style = "border: 1px solid black;">
+          
+        <p id = "UP" style = 
+            "font-size: 15px; font-weight: bold;">
+        </p>
+          
+        <button onclick = "Fun()">
+            click here
+        </button>
+          
+        <p id = "DOWN" style =
+            "color:rgb(0, 153, 255); font-size: 20px; font-weight: bold;">
+        </p>
+          
+    </div>
+      <br>
+    <script> 
+        var up = document.getElementById('UP');
+        up.innerHTML = "This content is inside a big DIV.";
+        var down = document.getElementById('DOWN');
+          
+        down.innerHTML = "Click on the button to remove "
+                        + "just this parent DIV";
+          
+        var heading = document.getElementById('h1');
+          
+        function Fun() {
+            var content = $("#parent").contents();
+            $("#parent").replaceWith(content);
+        }
+    </script> 
+    <center>
+        <button class="btn"><a href="/89.html" target="_blank"> TASK_89 </a></button>
+    </center>
+</body>
+</html>

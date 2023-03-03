@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 91 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+          
+        <style>
+            .color {
+                color: rgb(255, 0, 200);
+            }
+            .fontWeight {
+                font-weight: bold;
+            }
+        </style>
+</head>
+<body style="text-align: center;">
+    <h1>TASK - 91 :- jQuery add multiple CSS classes to the HTML elements </h1>
+      
+    <p id = "UP" style = "font-size: 19px;">
+    </p>
+      
+    <button onClick = "Fun()">
+        click here
+    </button>
+      
+    <p id = "DOWN" style = 
+        "color: rgb(0, 60, 128); font-size: 30px; font-weight: bold;">
+    </p>
+      
+    <script>
+        $('#UP').text("Click on button to add multiple"
+            + " classes to this element");
+          
+        function Fun() {
+            $("#UP").addClass("color fontWeight");
+            $('#DOWN').text("color and fontWeight,"
+                    + " Both classes added");
+        }
+    </script>
+    <center>
+        <button class="btn"><a href="/92.html" target="_blank"> TASK_92 </a></button>
+    </center>
+</body>
+</html>

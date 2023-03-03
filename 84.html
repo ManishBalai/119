@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 84 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var Elements = ["C", "C++", "Java", "Python",
+                        "R", "Perl", "C#", "PHP"];
+  
+        function AddNewElementsByJquery() {
+            for (var i = 0; i < Elements.length; i++) {
+                $("#Languages")
+                .append('<li>' + Elements[i] + '</li>');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>TASK - 84 :- jQuery insert multiple HTML elements before and after the elements </h1>
+    <button onclick="AddNewElementsByJquery()">
+        Append Elements Using jQuery
+    </button>
+    <div id="LanguagesDiv">
+        <ul id="Languages">
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <center>
+        <button class="btn"><a href="/85.html" target="_blank"> TASK_85 </a></button>
+    </center>
+</body>
+</html>

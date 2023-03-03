@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 16 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 16 :- Count number of rows and columns in a table using jQuery. Go to the editor
+        Click me to see the solution 
+    </h1>
+    <table id="table1" border="1" width="140">
+          <tr> 
+            <th> Name </th> 
+            <th> MO. No.</th> 
+          </tr> 
+          <tr> 
+            <td> Namra </td> 
+            <td> - </td> 
+          </tr>
+          <tr> 
+            <td> Harsh </td> 
+            <td> - </td> 
+          </tr>  
+          <tr> 
+            <td> Anil </td> 
+            <td> - </td> 
+          </tr> 
+      </table> 
+  
+      <script>
+        $.fn.rowCount = function() {
+    return $('tr', $(this).find('tbody')).length;
+};
+
+$.fn.columnCount = function() {
+    return $('th', $(this).find('tbody')).length;
+};
+var
+
+rowctr = $('#table1').rowCount();
+var colctr = $('#table1').columnCount();
+
+console.log('No of Rows:'+rowctr);
+console.log('No of Columns:'+colctr);
+      </script> 
+    <center>
+        <button class="btn"> <a href="/task_17.html" target="_blank"> task_17</a></button>
+    </center>
+</body>
+</html>

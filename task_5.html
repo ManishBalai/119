@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 5 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+        .printPage {
+            padding: 5px 10px;
+            font-size: 25px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(454deg, #6190e8, #a7bfe8);
+        }
+        .printPage:hover {
+            color: black;
+            border: 1px solid black;
+            background: linear-gradient(454deg,#ee9ca7,#ffdde1);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green;">
+        TASK - 5 :- Print a page using jQuery. 
+    </h1>
+    <div>
+        <h2> Virat Kohli</h2>
+        <p>
+            Virat Kohli is an Indian international cricketer and former captain of the Indian national team who plays as a right-handed batsman for Royal Challengers Bangalore in the IPL and for Delhi in Indian domestic cricket
+        </p>
+        <hr>
+        <h2> MS Dhoni </h2> 
+        <p>
+            Mahendra Singh Dhoni, commonly known as MS Dhoni, is a former Indian cricketer and captain of the Indian national team in limited-overs formats from 2007 to 2017, and in Test cricket from 2008 to 2014. He is also the current captain of Chennai Super Kings in the Indian Premier League. 
+        </p>
+        <hr>
+        <h2> Sachin Tendulkar </h2>
+        <p>
+            Sachin Ramesh Tendulkar BR is an Indian former international cricketer who captained the Indian national team. Nicknamed "The Little Master" and "Master Blaster", he is regarded as one of the greatest batsmen in the history of cricket.
+        </p>
+        <a   class="printPage" href="#">Print</a>
+    </div>
+    <script>
+        $('a.printPage').click(function(){
+           window.print();
+           return false;
+});
+    </script>
+    <center>
+        <button class="btn"> <a href="task_6.html" target="_blank"> task_6</a></button>
+    </center>
+</body>
+</html>

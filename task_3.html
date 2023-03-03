@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 3 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body style="background-color: black;" align="center">
+    <h1 style="color: green;">
+        TASK - 3 :- Blink text using jQuery. 
+    </h1>
+
+    <p style="font-size: 25px; font-weight: bold; color: #6190e8;"> <span class="blink"> MANISH BALAI</span></p>
+
+    <script>
+        function blink_text() {
+            $('.blink').fadeOut(500);
+            $('.blink').fadeIn(500);
+        }
+        setInterval(blink_text, 1000);
+    </script>
+    <center>
+        <button class="btn"> <a href="task_4.html" target="_blank"> TASK_4</a></button>
+    </center>
+</body>
+</html>

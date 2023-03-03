@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 17 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 17 :- How to get textarea text using jQuery. 
+    </h1>
+    <center>
+        <textarea id="txtArea"></textarea><br><br>
+        <button id="btn">Show Text</button><br><br>
+    </center>
+
+    <script>
+        $(document).ready(function () {
+            
+            //This function called when the button is clicked
+            $("#btn").click(function () {
+                
+                // val() method is used to get the values from 
+               // textarea and stored in txt variable
+                var txt = $("#txtArea").val();
+                alert(txt);
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_18.html" target="_blank"> task_18</a></button>
+    </center>
+</body>
+</html>

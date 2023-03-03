@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 102 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .GFG {
+            height: 200px;
+            width: 350px;
+            padding: 20px;
+            margin: 3px;
+            border: 3px solid green;
+            background-color: lightgreen;
+        }
+        .geeks {
+            height: 80px;
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border: 2px solid black;
+            background-color: green;
+            text-align: center;
+        }
+    </style>
+      
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      
+    <!-- Script to display outer width excluding margin -->
+    <script>
+        $(document).ready(function() {
+            $(".outw").click(function() {
+                alert("Outer width of div: "
+                + $("div").outerWidth());
+            });
+        });
+        $(document).ready(function() {
+            $(".outh").click(function() {
+                alert("Outer height of div: "
+                    + $("div").outerHeight());
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>TASK - 102 :- jQuery get outer width and height of an element
+    </h1>
+    <button class="outw">outerwidth</button>
+    <button class="outh">outer height</button>
+    <div class = "GFG"></div>
+    <div class="geeks"> </div>
+    <center>
+        <button class="btn"><a href="/103.html" target="_blank"> TASK_103 </a></button>
+    </center>
+</body>
+</html>

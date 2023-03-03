@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+.btn {
+    height: 45px;
+    width: 110px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(454deg, #6190e8, #a7bfe8);
+}
+.btn:hover {
+    color: aliceblue;
+    border: 1px solid black;
+    background: linear-gradient(454deg,#ee9ca7,#ffdde1);
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+}

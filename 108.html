@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 108 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { 
+            margin: 10px;
+        }
+        .frame{
+            border: 2px solid rgb(2, 0, 128);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("li").parentsUntil("html").addClass("frame");
+    });
+    </script>
+</head>
+<body>
+    <h1>TASK - 108 :- jQuery select all the ancestor elements between two elements
+    </h1>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>This is a <em>simple paragraph</em>.</p>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+        </ul>
+    </div>
+    <center>
+        <button class="btn"><a href="/109.html" target="_blank"> TASK_109 </a></button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 70 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TASK - 70 :- Executing callback multiple times in jQuery </h1>
+    <button>Click</button>
+        <p></p>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $('button').click(function() {
+                console.log("Button clicked!");
+                callbackFirst();
+            });
+ 
+            function callbackFirst() {
+                console.log("First Function start");
+                for (var i = 1; i < 10; i++) {
+                    $('p').append(i + " ");
+                }
+                console.log("First Function end");
+                callbackSecond();
+            }
+ 
+            function callbackSecond() {
+                console.log("Second Function start");
+                $('body').css({
+                    'background-color': 'yellow'
+                });
+                $('h1').css({
+                    'color': 'red'
+                });
+                console.log("Second Function end");
+            }
+        </script>
+    </center>
+    <center>
+        <button class="btn"><a href="/71.html" target="_blank"> TASK_71 </a></button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK - 11</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src=
+"https://code.jquery.com/jquery-git.js">
+    </script>
+    <style>
+        p span {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 11 :- underline the words of text using jquery..
+    </h1>
+    <p>
+        It had been years since the car had been driven. It sat in the driveway, slowly being taken over by rust and weeds. The windows were boarded up and the tires were long gone. But to a young boy, it was the most beautiful car he had ever seen.
+    </p>
+      
+    <script>
+        $(document).ready(function () {
+            $('p').each(function () {
+                var text_words = 
+                    $(this).text().split(' ');
+  
+                $(this).empty().html(function () {
+                    for (i = 0; i < text_words.length; i++) {
+                        if (i === 0) {
+                            $(this).append('<span>' 
+                            + text_words[i] + '</span>');
+                        }
+                        else {
+                            $(this).append(' <span>' 
+                            + text_words[i] + '</span>');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_12.html" target="_blank"> task_12</a></button>
+    </center>
+</body>
+</html>

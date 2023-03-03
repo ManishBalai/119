@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 4 </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style type="text/css">
+        body,
+        td {
+            font-size: 10pt;
+            text-align: center;
+        }
+          
+        h1 {
+            color: green;
+        }
+          
+        table {
+            height: 400px;
+            width: 450px;
+            background-color: black;
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+          
+        th {
+            font-size: 25px;
+            padding: 5px 8px;
+            border: 1px outset silver;
+            background-color: rgb(197, 69, 69);
+            color: white;
+        }
+          
+        tr {
+            border: 1px outset silver;
+            padding: 5px 8px;
+            background-color: white;
+            margin: 1px;
+        }
+          
+        tr.zebrastripe {
+            background-color: green;
+        }
+          
+        td {
+            font-size: 25px;
+            border: 0.5px outset silver;
+            border-collapse: collapse;
+            padding: 5px 8px;
+        }
+          
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green;">
+        TASK - 4 :- Create a Zebra Stripes table effect.
+    </h1>
+
+    <table class="center">
+        <tr>
+            <th> No. </th>
+            <th> Friend's</th>
+            <th> M. No.</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> NAMRA </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> HARSH </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td> ANIL </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td> HARDEEPSINH </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td> SARTHIK </td>
+            <td> - </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td> PAGAL </td>
+            <td> - </td>
+        </tr>
+    </table>
+    <br><br>
+    <script type="text/javascript">
+        $(function() {
+            $("table tr:nth-child(odd)")
+                .addClass("zebrastripe");
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="task_5.html" target="_blank"> TASK_5</a></button>
+    </center>
+</body>
+</html>

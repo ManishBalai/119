@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 93 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <style>
+        p.center {
+            text-align: center;
+            color:blue;
+        }
+
+        p.large {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <h1>TASK - 93 :- jQuery remove all the CSS classes from the HTML elements at once
+    </h1>
+    <p id="item" class="center large">Have a nice day.</p>
+    
+  <input type="button" value="Click to remove all classes" onclick="remove_classes()" />
+    <script>
+        function remove_classes()
+    {
+        $("#item").removeClass();
+    }
+    </script>
+    <center>
+        <button class="btn"><a href="/94.html" target="_blank"> TASK_94 </a></button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 87 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      
+    <style>
+        .main {
+            width: 450px;
+            text-align: justify;
+            font-size: 18px;
+        }
+  
+        #GFG {
+            padding: 5px 15px;
+            margin-top: 20px;
+        }
+    </style>
+  
+    <script>
+        $(document).ready(function() {
+            $("#GFG").on('click', function() {
+                $(".main").empty();
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>TASK - 87 :- jQuery remove the HTML elements from the page
+    </h1>
+    <center>
+    <div class="main">
+        <div class="section1">
+            Watching you walk across a room is the greatest gift. The way you move is so graceful and easy. The way you smile makes me feel at peace. 
+        </div>
+
+        <div class="section2">
+            Knowing you're walking towards me is a feeling so hard to describe.
+        </div>
+    </div>
+
+    <input type="button" id="GFG" value="Remove Contents">
+</center>
+    <br>
+    <center>
+        <button class="btn"><a href="/88.html" target="_blank"> TASK_88 </a></button>
+    </center>
+</body>
+</html>

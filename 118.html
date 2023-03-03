@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 118 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .highlight{
+            background: red;
+        }
+        h2 {
+            text-align: center;
+            color: blueviolet;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("ul").prev().addClass("highlight");
+    });
+    </script>
+</head>
+<body>
+    <h1>TASK - 118 :- jQuery select all the previous sibling elements of an element
+    </h1>
+    <div class="container">
+        <h2>Hello World</h2>
+        <p>HELLO <em>everyone</em>.</p>
+        <p>This is paragraph.</p>
+        <ul>
+            <li>Good</li>
+            <li>Night</li>
+        </ul>
+    </div>
+    <center>
+        <button class="btn"><a href="/119.html" target="_blank"> TASK_119 </a></button>
+    </center>
+</body>
+</html>

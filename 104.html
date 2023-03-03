@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 104 </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- width -->
+    <style type="text/css">
+        #div_box_body{
+            width: 300px;
+            height: 250px;
+            padding: 28px;
+            border: 12px solid #23384E;
+            background: #28BAA2;
+            margin: 16px;
+        }        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btn_width").click(function(){
+            var GetWidth = $("#div_box_body").outerWidth();
+            $("#output").html("Before Set Width: " + GetWidth);
+            var SetWidth = $("#div_box_body").outerWidth(400);
+            $("#set_width").html("After Set - Width: " + 400);
+        });
+    });
+    </script>
+    <!-- height -->
+    <style type="text/css">
+        #div_box_height{
+            width: 300px;
+            height: 250px;
+            padding: 28px;
+            text-align: justify;
+            border: 12px solid #23384E;
+            background: #28BAA2;
+            margin: 16px;
+        }        
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btn_height").click(function(){
+            var heightWidth = $("#div_box_height").outerHeight();
+            $("#output_height").html("Before Set Outer Height: " + heightWidth);
+            $("#div_box_height").outerHeight(400); // set the height of box
+            $("#set_height").html("After Set Outer Height: " + 400);
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>TASK - 104 :- jQuery set outer width and height of the elements
+    </h1>
+    <!-- weight -->
+    <div id="div_box_body" >What miserable weather we’re having! </div>
+    <button type="button" id="btn_width">Get & Set Outer Width</button>
+    <p id="output"></p>
+    <p id="set_width"></p>
+    <hr>
+    <!-- height -->
+    <div id="div_box_height" >Don’t let it bother you too much.</div>
+    <button type="button" id="btn_height">Get & Set Outer Height</button>
+    <p id="output_height"></p>
+    <p id="set_height"></p>
+    
+    <center>
+        <button class="btn"><a href="/105.html" target="_blank"> TASK_105 </a></button>
+    </center>
+</body>
+</html>

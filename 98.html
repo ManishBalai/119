@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 98 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <style>
+        div {
+            width: 350px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px double rgb(86, 88, 86);
+        }
+    </style>
+  
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div_width = $(".div-class").width();
+                var div_height = $(".div-class").height();
+                $("#div-width-height").html("Width: " + 
+                    div_width + ", " + "Height: " + div_height);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>TASK - 98 :- jQuery get width and height of an element </h1>
+    <div class="div-class">
+         Be Happy :)
+    </div>
+    </br>
+  
+    <button>Get Width/Height</button>
+  
+    <p id="div-width-height"></p>
+    <center>
+        <button class="btn"><a href="/99.html" target="_blank"> TASK_99 </a></button>
+    </center>
+</body>
+</html>

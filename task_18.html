@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 18 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 18 :- Access form input fields using jQuery.  
+    </h1>
+    <form id="myForm" action="sample.php">
+        First name:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="">
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+        <script>
+            $('#myForm').submit(function() {
+  var values = $(this).serialize();
+  console.log(values);
+});
+        </script>
+    <center>
+        <button class="btn"> <a href="/task_19.html" target="_blank"> task_19</a></button>
+    </center>
+</body>
+</html>

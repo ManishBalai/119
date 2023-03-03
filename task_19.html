@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 19 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 19 :- Find the absolute position of an element using jQuery. Go to the editor
+    </h1>
+    <form id="myForm" action="sample.php">
+        First name:<br>
+        <input type="text" id="nam12" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" id="name2" name="lastname" value="">
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+        
+    <center>
+        <button class="btn"> <a href="/task_20.html" target="_blank"> task_20</a></button>
+    </center>
+</body>
+<script>
+    var left_position = $("#name2").offset().left - $(document).scrollTop();
+console.log('Left: '+left_position);
+
+var top_position = $("#name2").offset().top - $(document).scrollTop();
+console.log('Right: '+top_position);
+</script>
+</html>

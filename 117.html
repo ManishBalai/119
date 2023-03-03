@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 117 </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .siblings * { 
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("li.start").prev().css({"color": "red", "border": "2px solid red"});
+        });
+        </script>
+</head>
+<body>
+    <h1>TASK - 117 :- jQuery select the previous sibling element of an element
+    </h1>
+    <div style="width:500px;" class="siblings">
+        <ul>ul (parent)  
+          <li> A (sibling)</li>
+          <li> B (the previous sibling of C with class name "start")</li>
+          <li class="start"> C (sibling with class name "start")</li>
+          <li> D (sibling)</li>
+          <li> E (sibling)</li>
+        </ul>   
+      </div>
+    <center>
+        <button class="btn"><a href="/118.html" target="_blank"> TASK_118 </a></button>
+    </center>
+</body>
+</html>

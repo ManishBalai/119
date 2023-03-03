@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 15</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 15 :- Code to detect whether the user has pressed 'Enter Key' using jQuery.
+    </h1>
+     
+    <p id = "GFG_UP" style = 
+    "font-size: 15px; font-weight: bold;">
+    click the Enter Key inside the textarea.
+</p>
+  
+<textarea></textarea>
+<br>     
+  
+<p id = "GFG_DOWN" style = 
+    "color:green; font-size: 20px; font-weight: bold;">
+</p>
+ <script>
+    $('textarea').keyup(function(e) {
+        if(e.keyCode == 13) {
+            $(this).trigger("enterKey");
+        }
+    });         
+    $('textarea').on("enterKey", function(e){
+        $("#GFG_DOWN").text("Enter key pressed inside textarea");
+    });                             
+</script> 
+    <center>
+        <button class="btn"> <a href="/task_16.html" target="_blank"> task_16</a></button>
+    </center>
+</body>
+</html>
