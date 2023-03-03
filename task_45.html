@@ -1,0 +1,31 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 45 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script>
+        var x = 1;
+        $(document).ready(function() {
+            $(window).resize(function() {
+                $("span").text(x += 1);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 45 :- Run code on resize event in jQuery
+    </h1>
+    
+    <p>Window resized <span>0</span> times.</p>
+    <p>Try resizing your browser window.</p>
+    <center>
+        <button class="btn"> <a href="/task_46.html" target="_blank"> task_46</a></button>
+    </center>
+</body>
+</html>

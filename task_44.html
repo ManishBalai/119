@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 44 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+  
+        // jQuery code to show the working of this method
+        $(document).ready(function () {
+            $("form").submit(function () {
+                alert("Form submitted Successfully");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 44 :- Run code on submit event in jQuery
+    </h1>
+    <form action="">
+        <table border=1 align="center">
+            <tr>
+                <!-- Enter Username -->
+                <td>Username:</td>
+                <td>
+                    <input type=text 
+                        name=name size=25>
+                </td>
+            </tr>
+            <tr>
+                <!-- Enter Password. -->
+                <td>Password:</td>
+                <td>
+                    <input type=password 
+                        name=password1 size=25>
+                </td>
+            </tr>
+            <tr>
+                <!-- To Confirm Password. -->
+                <td>Confirm Password:</td>
+                <td><input type=password name=password2 size=25></td>
+            </tr>
+            <tr>
+                <td colspan=2 align=right>
+                    <input type=submit value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <center>
+        <button class="btn"> <a href="/task_45.html" target="_blank"> task_45</a></button>
+    </center>
+</body>
+</html>

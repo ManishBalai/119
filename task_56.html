@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 56 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+           });
+        });
+        </script>
+        <style> 
+            #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 2px black;
+                margin-bottom: 4px;
+            }
+            #panel {
+                font-size: 35px;
+                padding: 5px;
+                text-align: center;
+                background-color: tomato;
+                border: double 5px #000000;
+            }
+            #panel {
+                padding: 50px;
+                display: none;
+                }
+</style>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 56 :- Creating slide-up and slide-down effect in jQuery
+    </h1>
+    <div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Everything you do…the way you eat, the way you smile, the way my name rolls off of your tongue…all that is what keeps me going. It gives me so much joy to watch you be you. I would never give my attention to anyone else because I love giving it to you. The day when you were born, it was raining. Actually, it wasn’t raining itself, but heaven was crying for losing the most beautiful angel!</div>
+<br><br>
+    <center>
+        <button class="btn"> <a href="/task_57.html" target="_blank"> task_57</a></button>
+    </center>
+</body>
+</html>

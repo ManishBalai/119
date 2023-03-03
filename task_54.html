@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 54 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #Outer {
+            border: 1px solid black;
+            padding-top: 40px;
+            height: 150px;
+            background-color: cornflowerblue;
+            display: none;
+        }
+    </style>
+ 
+    
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 54 :- Setting the duration of fade toggle effect in jQuery
+    </h1>
+    <div id="Outer">
+        <h1 style="color:white;">
+            Indian Premier League
+        </h1>
+    </div><br>
+    <center>
+    <button id="btn">
+        Fade Toggle
+    </button>
+    </center>
+    <br><br>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#Outer").fadeToggle(1000);
+            });
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_55.html" target="_blank"> task_55</a></button>
+    </center>
+</body>
+</html>

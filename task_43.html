@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 43 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("input").blur();
+                $("p").html("This is blur method that is used!!!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 43 :- Run code on blur event in jQuery
+    </h1>
+    Enter Value:
+    <input type="text">
+    <br><br>
+    
+    <button id="btn">start blur event!!!</button>
+    <p style="color: darkblue;"></p>
+    <center>
+        <button class="btn"> <a href="/task_44.html" target="_blank"> task_44</a></button>
+    </center>
+</body>
+</html>

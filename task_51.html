@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 51 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 51 :- Creating fade-in and fade-out effect in jQuery
+    </h1>
+    <div style="background:#2E9AFE; width:100%;"> Every day is a celebration of having you in my life.</div>
+    <br>
+    <button id="btn2">Fade In (4 Second)</button>
+    <button id="btn1">Fade Out (4 Second)</button>
+    <script>
+        $(document).ready(function(){
+        $("#btn1").click(function(){
+        $("div").fadeOut(4000);
+        });
+        $("#btn2").click(function(){
+        $("div").fadeIn(4000);
+        }); 
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_52.html" target="_blank"> task_52</a></button>
+    </center>
+</body>
+</html>

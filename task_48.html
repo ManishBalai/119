@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 48 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 15px;
+        background: #8cf0aa;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Hide displayed paragraphs
+    $(".hide-btn").click(function(){
+        $("p").hide();
+    });
+    
+    // Show hidden paragraphs
+    $(".show-btn").click(function(){
+        $("p").show();
+    });
+});
+</script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 48 :- Creating animated show hide effect in jQuery
+    </h1>
+    <button type="button" class="hide-btn">Hide Paragraphs</button> 
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p>I can't help but love you forever.</p>
+    <p>I will live the rest of my life thanking God for these attributes he has blessed you with</p>
+    <center>
+        <button class="btn"> <a href="/task_49.html" target="_blank"> task_49</a></button>
+    </center>
+</body>
+</html>

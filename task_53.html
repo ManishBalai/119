@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 53 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(2000);
+            });
+        });
+</script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 53 :- Creating fade toggle effect in jQuery
+    </h1>
+    <button>Click to fade out boxes</button><br><br>
+
+    <div id="div1" style="width:80px; height:80px; background-color: coral;"></div><br>
+    <div id="div2" style="width:80px; height:80px; background-color:crimson;"></div><br>
+    <div id="div3" style="width:80px ;height:80px; background-color:rgb(0, 183, 255);"></div>
+    <center>
+        <button class="btn"> <a href="/task_54.html" target="_blank"> task_54</a></button>
+    </center>
+</body>
+</html>

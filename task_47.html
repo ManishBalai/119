@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 47 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+      
+    <style>
+        body {
+            border: 7px double violet;
+            min-height: 240px;
+            text-align: center;
+        }
+  
+        div {
+            display: flex;
+            justify-content: center;
+        }
+  
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 47 :- Creating a simple show hide effect in jQuery
+    </h1>
+    <div id="element">
+        Hello Everyone, Have a nice day :) 
+    </div>
+  
+    <div class="button-container">
+        <button id="click">
+            hide
+        </button>
+    </div>
+  <br>
+    <script>
+        $('#click').on('click', function () {
+            if ($('#click').text() === 'show') {
+  
+                // This block is executed when
+                // you click the show button
+                $('#click').text('hide');
+                $('#element').css('display', 'flex');
+            }
+            else {
+  
+                // This block is executed when
+                // you click the hide button
+                $('#click').text('show');
+                $('#element').css('display', 'none');
+            }
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_48.html" target="_blank"> task_48</a></button>
+    </center>
+</body>
+</html>

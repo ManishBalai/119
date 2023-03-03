@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 55 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        body {
+            width: 30%;
+            height: 80px;
+            border: 8px double darkred;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        This paragraph will fade out !
+    </p>
+
+    <p>
+        This paragraph will not fade !
+    </p>
+    <br><br><br>
+    <h1 style="color: green">
+        TASK - 55 :- Fading elements to a certain opacity in jQuery
+    </h1>
+    
+    <script>
+        $("p:first").click(function () {
+            $(this).fadeTo("slow", 0.33);
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_56.html" target="_blank"> task_56</a></button>
+    </center>
+</body>
+</html>

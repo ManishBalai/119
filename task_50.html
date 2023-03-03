@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 50 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <h1 style="color: green">
+        TASK - 50 :- Creating animated toggle effect in jQuery
+    </h1>
+    <button id="enable">(Enable) jQuery.fx.off = false)</button>  
+    <button id="disable">(Disable) jQuery.fx.off = true)</button>
+    <br><br>
+    <button id="toggle">Toggle animation</button>
+    <div style="background:#98bf21; height:100px; width:100px; margin:50px;"></div>  
+    <script>
+        $("#enable").click(function(){
+        jQuery.fx.off = false;
+    }); 
+
+    $("#disable").click(function(){
+        jQuery.fx.off = true;
+    });
+ 
+    $("#toggle").click(function(){
+        $("div").toggle("slow");
+    });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_51.html" target="_blank"> task_51</a></button>
+    </center>
+</body>
+</html>

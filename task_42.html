@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TASK - 42 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src=
+"https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        span {
+            display: none;
+        }
+  
+        body {
+            width: 35%;
+            height: 50px;
+            border: 2px solid green;
+            padding: 35px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        <input type="text"> <span>focused</span>
+    </p>
+    <br><br><br>
+    <h1 style="color: green">
+        TASK - 42 :- Run code on focus event in jQuery
+    </h1>
+    <script>
+        $("input").focus(function () {
+            $(this).next("span").css("display", "inline");
+        });
+    </script>
+    <center>
+        <button class="btn"> <a href="/task_43.html" target="_blank"> task_43</a></button>
+    </center>
+</body>
+</html>
